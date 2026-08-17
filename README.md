@@ -83,7 +83,7 @@ view-marketing-bi/
 
 ```bash
 # 1. Clone o repositório
-git clone https://github.com/hanni-psr/view-marketing-bi.git
+git clone https://github.com/MihrVMF/view-marketing-bi.git
 cd view-marketing-bi
 
 # 2. Crie o ambiente virtual e instale dependências
