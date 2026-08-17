@@ -1,4 +1,4 @@
-# VIEW MARKETING — Pipeline de Tráfego Pago com Meta Ads API
+# VIEW MARKETING: Pipeline de Tráfego Pago com Meta Ads API
 
 Dashboard de BI para monitoramento de performance de mídia paga,
 cobrindo Meta Ads (Facebook/Instagram) com pipeline de extração
@@ -18,15 +18,15 @@ de forma automatizada.
 
 Pipeline completo de dados cobrindo três etapas:
 
-1. **Extração** — Script Python que consome a API do Meta Ads
+1. **Extração**: Script Python que consome a API do Meta Ads
    (Graph API v19.0) com suporte a paginação completa, cobrindo
    todas as campanhas desde 2026-01-01 com atualização diária.
 
-2. **Armazenamento** — Carga incremental no PostgreSQL com
+2. **Armazenamento**: Carga incremental no PostgreSQL com
    `ON CONFLICT` para garantir idempotência: reprocessar não
    duplica nem corrompe o histórico.
 
-3. **Visualização** — Dashboard Power BI com 8 canais de aquisição
+3. **Visualização**: Dashboard Power BI com 8 canais de aquisição
    (Meta, Google, TikTok, Orgânico, Indicação, Hotspot, Campanha
    Externa, LP Sem Rastreio), funil MQL→SQL→Contratos e KPIs
    financeiros (CAC, ROI LTV, Ticket Médio, MRR).
@@ -46,7 +46,7 @@ que rodar o pipeline duas vezes no mesmo dia produz o mesmo resultado.
 não usa relacionamento direto com a tabela de spend. O roteamento é
 feito via `SELECTEDVALUE` + `SWITCH` em DAX, permitindo que cada
 medida filha saiba qual canal está selecionado sem depender de
-relacionamento no modelo — padrão necessário para cruzar fontes
+relacionamento no modelo, padrão necessário para cruzar fontes
 heterogêneas (API de ads + sistema IXC).
 
 **Validação:** O spend extraído foi validado manualmente contra
