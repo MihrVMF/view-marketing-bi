@@ -69,7 +69,9 @@ modelo, padrão necessário para cruzar fontes heterogêneas (API de ads
 
 ## Imagens
 
-*(prints do dashboard em breve)*
+![ROI, CAC e evolução do MRR](imagens/roi-cac-mrr.png)
+
+![CPL, CPM, CTR e funil de conversão](imagens/cpl-funil-conversao.png)
 
 ## Como Reproduzir
 
